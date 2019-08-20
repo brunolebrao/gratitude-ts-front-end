@@ -1,16 +1,16 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Login from './components/Login';
-import Header from './components/Header';
-import GlobalStyle, {useStyles} from './styles/global';
+import Auth from './components/Auth';
+import NavBar from './components/NavBar';
+import GlobalStyle, {useStyles} from './assets/styles/global';
 
 const App: React.FC = () => {
   const classes = useStyles();
   return (
     <>
-      <Header />
+      <NavBar />
       <Container maxWidth="sm" className={classes.container}>
-        <Login />
+        <Auth />
         <GlobalStyle />
       </Container>
     </>

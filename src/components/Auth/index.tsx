@@ -17,7 +17,7 @@ interface MyFormValues {
   password: string;
 }
 
-const Login: React.SFC<{}> = () => {
+const Auth: React.FC<{}> = () => {
   return (
     <Formik
       initialValues={{email: '', password: ''}}
@@ -87,4 +87,4 @@ const validationSchema = yup.object().shape({
     .required('Senha é obrigatório'),
 });
 
-export default Login;
+export default Auth;
